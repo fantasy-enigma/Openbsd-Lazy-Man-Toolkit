@@ -14,21 +14,21 @@ if [ "$FLAG_CURRENT" = "current" ]
 then
 	echo "## checkoutCVS begin: `date`"
 	echo "## checkoutCVS begin: `date`" >> /home/CVS/autoCVS.log
-	cvs -qd $CVSROOT checkout -P src >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
-	cvs -qd $CVSROOT checkout -P xenocara >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
+#	cvs -qd $CVSROOT checkout -P src >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
+#	cvs -qd $CVSROOT checkout -P xenocara >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
 	cvs -qd $CVSROOT checkout -P ports >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
 	echo "## checkoutCVS finish: `date`\n\n" >> /home/CVS/autoCVS.log
 	echo "## checkoutCVS finish: `date`"
 else
 	echo "## checkoutCVS begin: `date`"
 	echo "## checkoutCVS begin: `date`" >> /home/CVS/autoCVS.log
-	cvs -qd $CVSROOT checkout -r$OS_VERSION -P src >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
-	cvs -qd $CVSROOT checkout -r$OS_VERSION -P xenocara >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
+#	cvs -qd $CVSROOT checkout -r$OS_VERSION -P src >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
+#	cvs -qd $CVSROOT checkout -r$OS_VERSION -P xenocara >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
 	cvs -qd $CVSROOT checkout -r$OS_VERSION -P ports >> /home/CVS/autoCVS.log 2>> /home/CVS/autoCVS.log
 	echo "## checkoutCVS finish: `date`\n\n" >> /home/CVS/autoCVS.log
 	echo "## checkoutCVS finish: `date`"
 fi
 
-  rsync -av /usr/src/ /home/CVS/src
-  rsync -av /usr/xenocara/ /home/CVS/xenocara
+# rsync -av /usr/src/ /home/CVS/src
+# rsync -av /usr/xenocara/ /home/CVS/xenocara
   rsync -av /usr/ports/ /home/CVS/ports

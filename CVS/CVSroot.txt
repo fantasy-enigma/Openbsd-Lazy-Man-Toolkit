@@ -1,0 +1,12 @@
+CVSROOT=anoncvs@ftp.hostserver.de:/cvs
+reposync rsync://ftp.hostserver.de/cvs/
+Location: Frankfurt, Germany.
+Maintained by Sebastian Benoit, Florian Obser.
+Protocols: ssh.
+Updated hourly from main server.
+SSH fingerprints:
+(RSA) SHA256:XrjDaKqJ6J02iSQ/eoiqII0LxJX9D/41eeC6pSQAJXs
+(ECDSA) SHA256:v6G11hMFfS2+zPh44hhZcpUqDEppyvGQe0vzmrtIHA8
+(ED25519) SHA256:KeG1InAfAnQKqpCewmXw/Egb+4UZZuIMGdlYVG+uxNg
+
+

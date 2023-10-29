@@ -1,0 +1,193 @@
+﻿Available Anonymous CVS Servers
+
+    CVSROOT=anoncvs@anoncvs.au.openbsd.org:/cvs
+    reposync rsync://anoncvs.au.openbsd.org/cvs/
+    Location: Brisbane, Australia.
+    Maintained by David Gwynne.
+    Protocols: ssh.
+    Updated hourly.
+    SSH fingerprints:
+    (RSA) SHA256:pPcBY4E33vwreETbz5KJUIzZpWWzaZPhrpnLaFa7WuQ
+    (ECDSA) SHA256:kg2Zaqpd8ZuluPzlpFS9rEw0KR1UmxD9jSG6+2tr28A
+    (ED25519) SHA256:4CbDtzH/6mqQ/f6KDLz0rdqK2Thk4dQQtHXOxTONEvk
+
+    CVSROOT=anoncvs@anoncvs1.ca.openbsd.org:/cvs
+    Host also known as anoncvs.ca.openbsd.org, openbsd.sunsite.ualberta.ca.
+    Location: Alberta, Canada.
+    Maintained by Bob Beck.
+    Protocols: ssh.
+    SSH fingerprints:
+    (RSA) SHA256:10SgQKcgCw02RSqBZGa8eGUR0ab+YkuhqFENhOoK1L4
+    (ECDSA) SHA256:hVx+UscX/3uhv2nxPgp2zC/omvDIBSkv6iISCn19yqQ
+    (ED25519) SHA256:WDEcVZFXagh0OXHlHVhcct6VjFjFqaNZwAhM3GnVA/c
+
+    CVSROOT=anoncvs@anoncvs2.ca.openbsd.org:/cvs
+    Location: Alberta, Canada.
+    Maintained by Bob Beck.
+    Protocols: ssh.
+    SSH fingerprints:
+    (RSA) SHA256:VfzLrOeqzIfWiNdJ0SpHvk3JU4a+VpNzwjxzZ7lWaNY
+    (ECDSA) SHA256:IQrHoNZPHmhnR1R3qMURVH3e83f95IZXdkNjFZCnKfw
+    (ED25519) SHA256:7grIp6jKgas/PLrVqaSwLh60k626+iaGw/BBFSfr7ck
+
+    CVSROOT=anoncvs@anoncvs.comstyle.com:/cvs
+    reposync rsync://anoncvs.comstyle.com/cvs/
+    Location: Toronto, Canada.
+    Maintained by Brad Smith.
+    Protocols: ssh, ssh port 2022.
+    Updated hourly.
+    SSH fingerprints:
+    (RSA) SHA256:vYSNKOoCHReBzmdJy3SiULg7YyEZVoib3X3jGJShezA
+    (ECDSA) SHA256:W2WEQDka4xicJzeQY0Nm0iCv3h2xZLzfp+TT1UvtBTw
+    (ED25519) SHA256:cqNaOU0KSmJ/S7jrV4UbZ6WkkyXWZ07rhWK8yrRZUV0
+
+    CVSROOT=anoncvs@obsdacvs.cs.toronto.edu:/cvs
+    reposync rsync://obsdacvs.cs.toronto.edu/obsdcvs/
+    Location: University of Toronto, Toronto, ON, Canada.
+    Maintained by Nick Holland.
+    Protocols: ssh.
+    Updated every 2 hours from main server.
+    SSH fingerprints:
+    (RSA) SHA256:BosSX+gUL/17cUdppQlmXht1S5GGHrHNrL6+U3hyG+o
+    (ECDSA) SHA256:4I5R4/tGayGG0KDEsj6CY1eCqt2sbcYtA3nqnhUaD04
+    (ED25519) SHA256:AqblfWV4KT2ptlpV3mq3gb4jNPzgYtjDvlBBcaeohxQ
+
+    CVSROOT=anoncvs@anoncvs.fr.openbsd.org:/cvs
+    reposync rsync://anoncvs.fr.openbsd.org/openbsd-cvs/
+    Location: Paris, France.
+    Maintained by Landry Breuil, Antoine Jacoutot.
+    Protocols: ssh.
+    Updated every 2 hours from main server.
+    SSH fingerprints:
+    (RSA) SHA256:d3o82eY/kIfUfmhVpwFu7Do1I7+Wol/tvWmm6Ye9HZ4
+    (ECDSA) SHA256:WXN4m8NHd4vcTqxmzLMMVenSh6gp8060nv39JIiCSss
+    (ED25519) SHA256:STeC5WGChnZjIi5Rb+XTAQSbKXQJ+B9wxhaacYNff7k
+
+    CVSROOT=anoncvs@files.venture37.com:/cvs
+    Location: Paris, France.
+    Maintained by Sevan Janiyan.
+    Protocols: ssh, ssh port 2022.
+    Updated every 2 hours from anoncvs.spacehopper.org.
+    SSH fingerprints:
+    (RSA) SHA256:3pG6tZMZkMSeCUrDUdp1qQ9dC5I0A+Pj1A0cXkLVoP4
+    (ECDSA) SHA256:2InpK4FJMYTnOPgvSbQtyEIcbTNtZKsPsaa3fBBxUhY
+    (ED25519) SHA256:IL+TcuRUBiaI+EkdjLDoLkwqOEZdt8bccgVINDRMHlM
+
+    CVSROOT=anoncvs@mirror.osn.de:/cvs
+    reposync -p rsync://mirror.osn.de/openbsd-all/
+    Location: Nürnberg, Germany.
+    Maintained by Armin Wolfermann.
+    Protocols: ssh.
+    Updated every 3 hours.
+    SSH fingerprints:
+    (RSA) SHA256:fQGY+UhLdbB3oDI4frFtSKF2BjQIkSY0lnSA6lVv8+o
+    (ECDSA) SHA256:plj+1CPTaKi0AIId/aDMCGgZZnkxc1ow+ffBNMvYW4A
+    (ED25519) SHA256:np+DK8xlo9A4YnYXO/22GBV8iyuL13r3g5I0/N1Mf8g
+
+    CVSROOT=anoncvs@ftp.hostserver.de:/cvs
+    reposync rsync://ftp.hostserver.de/cvs/
+    Location: Frankfurt, Germany.
+    Maintained by Sebastian Benoit, Florian Obser.
+    Protocols: ssh.
+    Updated hourly from main server.
+    SSH fingerprints:
+    (RSA) SHA256:XrjDaKqJ6J02iSQ/eoiqII0LxJX9D/41eeC6pSQAJXs
+    (ECDSA) SHA256:v6G11hMFfS2+zPh44hhZcpUqDEppyvGQe0vzmrtIHA8
+    (ED25519) SHA256:KeG1InAfAnQKqpCewmXw/Egb+4UZZuIMGdlYVG+uxNg
+
+    CVSROOT=anoncvs@anoncvs.jp.openbsd.org:/cvs
+    reposync rsync://anoncvs.jp.openbsd.org/cvs/
+    Host also known as kankoromochi.econ.nagasaki-u.ac.jp.
+    Location: Nagasaki University, Faculty of Economics, Nagasaki, Japan.
+    Maintained by SUZUKI Hitoshi.
+    Protocols: ssh.
+    Updated every 2 hours.
+    SSH fingerprints:
+    (RSA) SHA256:3XcKWDBEcB5XE4shCmRfh0LmSOyDcp4vcSQp8NK62Gk
+    (ECDSA) SHA256:aXpmw11DuXXLm8PsJ37L65jEXbu8JF2cnVfQptSkoyQ
+    (ED25519) SHA256:vLLJFhJCzzmXd7FwgQ+vJpnAQiDibSS2aZOgeuVZmjQ
+
+    CVSROOT=anoncvs@mirror.litnet.lt:/cvs
+    Location: Kaunas, Lithuania.
+    Maintained by Patrikas Kugrinas.
+    Protocols: ssh.
+    Updated every 2 hours from anoncvs.eu.openbsd.org.
+    SSH fingerprints:
+    (RSA) SHA256:RmbGnT7IGLvVd9tm5mAx7rz6VntYlwqW6qyT2QuritY
+    (ECDSA) SHA256:hj1btBB8gqLdm3EumX3T3LaUZkY9fm1RFvw9DVS2oi8
+    (ED25519) SHA256:EnczVm1Q8+lE+Zmue3jAPh/pA6BJhEDwL+HNMfedpXI
+
+    CVSROOT=anoncvs@anoncvs.obsd.si:/cvs
+    Location: Ljubljana, Slovenia.
+    Maintained by Mitja Muženič.
+    Protocols: ssh.
+    Updated every 2 hours from anoncvs.spacehopper.org.
+
+    CVSROOT=anoncvs@anoncvs.eu.openbsd.org:/cvs
+    reposync -p rsync://anoncvs.eu.openbsd.org/OpenBSD-cvs/
+    Location: Stockholm University, Stockholm, Sweden.
+    Maintained by Janne Johansson.
+    Protocols: ssh.
+    Updated every 2 hours from main server.
+    SSH fingerprints:
+    (RSA) SHA256:4gXNO1FcLP8Swdm759TMDI/73hCCO5kQr3vqi9o/r64
+    (ECDSA) SHA256:uz1m+x471U/+3dGsDgvYI/o+pmobQhuILMcr/fZcr6E
+    (ED25519) SHA256:txtWp19E25H1oSarwXzYTDDr46jsVeolIprB02OOfM8
+
+    CVSROOT=anoncvs@anoncvs.spacehopper.org:/cvs
+    reposync rsync://anoncvs.spacehopper.org/cvs/
+    Location: Plymouth, United Kingdom.
+    Maintained by Stuart Henderson.
+    Protocols: ssh, ssh port 2022, ssh port 443.
+    Updated hourly from main server.
+    SSH fingerprints:
+    (RSA) SHA256:orTIOu6IKP7Ndz317tyCaz8LJnJWz4jmzSuG+FK7jwM
+    (ECDSA) SHA256:p+VCx2KynGtiFFaaiF010SIQu6gJgmJb//yokW2sGBE
+    (ED25519) SHA256:oaJ7VEyjt2EHMeixzKn9zJGiV5YlWHIUls070tKdBzI
+
+    CVSROOT=anoncvs@anoncvs4.usa.openbsd.org:/cvs
+    reposync rsync://anoncvs4.usa.openbsd.org/cvs/
+    Location: New York Internet, New York, NY, USA.
+    Maintained by Todd C. Miller.
+    Protocols: ssh, ssh port 2022.
+    Updated hourly from main server.
+    SSH fingerprints:
+    (RSA) SHA256:RT7vVXrvmKgZ7VkrVZ0lgugDFCBPVT6iSwMh+m1vZTA
+    (ECDSA) SHA256:JreaFNTlm2Uhlk3iaMs4Rweq27KPSVYUgj9sZUsOxCc
+    (ED25519) SHA256:iLsNcXOnluavlGUV+O4JE7TNppEwIMvsjZ7m1VVObiM
+
+    CVSROOT=anoncvs@anoncvs2.usa.openbsd.org:/cvs
+    reposync rsync://anoncvs2.usa.openbsd.org/cvs/
+    Host also known as anoncvs3.usa.openbsd.org, ftp3.usa.openbsd.org, ftp5.usa.openbsd.org, openbsd.se.rit.edu.
+    Location: Rochester Institute of Technology, Rochester, NY, USA.
+    Maintained by Todd C. Miller.
+    Protocols: ssh, ssh port 2022.
+    Updated hourly from main server.
+    SSH fingerprints:
+    (RSA) SHA256:O/qRkEam5QXBxAcHA8qEEHXp9D2Ad1RMS43crbP+PDE
+    (ECDSA) SHA256:Bt9zXfPRYnP8DDBEXhH0SwCs3fU8EX/UA1Q5ypzkRdg
+    (ED25519) SHA256:c+jgUzXaKxwtbQUy+dfpC340p4bVzFYDNIDxW3dUO3A
+
+    CVSROOT=anoncvs@anoncvs1.usa.openbsd.org:/cvs
+    reposync rsync://anoncvs1.usa.openbsd.org/cvs/
+    Host also known as anoncvs.usa.openbsd.org.
+    Location: Network Media, LLC, Bend, OR, USA.
+    Maintained by Todd C. Miller.
+    Protocols: ssh, pserver.
+    Updated hourly from main server.
+    SSH fingerprints:
+    (RSA) SHA256:PFKE28DFbJLmqoLkq9xfBuiYl9GN2LABsvUpzNk+LlE
+    (ECDSA) SHA256:Ofstc7xq/W+73vBMUpb3A4ZqLNhKI3u2FdzbOkJpOHI
+    (ED25519) SHA256:IYHq/zKqYnd2wy71Br6X8Q1Jk0XGjOJA4PU6CAr6pDo
+
+    CVSROOT=anoncvs@anoncvs.obsd.esc7.net:/cvs
+    Location: Dallas, TX, USA.
+    Maintained by Ben Warriner.
+    Protocols: ssh.
+    Updated every 2 hours from anoncvs1.usa.openbsd.org.
+    SSH fingerprints:
+    (RSA) SHA256:dRMTujuH5R6Ds5VTDxFQZjA4OU0JpQg9yfeJP6dAWPg
+    (ECDSA) SHA256:zB+Lu/WgMAqD2fq01h5xia3G/P9eFwoiDqoTxL5sSI0
+    (ED25519) SHA256:1B6cgj0EnAodwiIdAl54SMWoaAoljh82jlNnhinseTM
+
+If your server is listed on here with inaccurate or unknown information, please contact beck@openbsd.org. 
