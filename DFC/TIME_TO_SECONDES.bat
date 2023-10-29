@@ -1,0 +1,59 @@
+#! /bin/sh
+
+
+FILE_MONTH=$1
+FILE_DAY=$2
+FILE_TIME=$3
+FILE_YEAR=$4
+echo "$FILE_MONTH $FILE_DAY $FILE_TIME $FILE_YEAR \n"
+
+TIME_HOUR=`echo $FILE_TIME | awk -F ':' '{print $1}' | sed s/^0//g`
+TIME_MINUTE=`echo $FILE_TIME | awk -F ':' '{print $2}' | sed s/^0//g`
+TIME_SECONDES=`echo $FILE_TIME | awk -F ':' '{print $3}' | sed s/^0//g`
+echo "$TIME_HOUR $TIME_MINUTE $TIME_SECONDES \n"
+
+## month day year number isn't fully, need -1 ##
+FULL_MONTH=$(($FILE_MONTH-1))
+FULL_DAY=$(($FILE_DAY-1))
+FULL_YEAR=$(($4-1))
+echo "$FULL_MONTH $FULL_DAY $FULL_YEAR \n"
+
+FULL_YEAR_DAY=$(($FULL_YEAR/4-$FULL_YEAR/100+$FULL_YEAR/400+$FULL_YEAR*365))
+echo "$FULL_YEAR_DAY \n"
+
+if [ $(($FILE_YEAR%4)) -eq 0 -a $(($FILE_YEAR%100)) -ne 0 -a $(($FILE_YEAR%400)) -eq 0 ]
+then
+	case $FULL_MONTH in
+		1)	FULL_MONTH_DAY=31						;;
+		2)	FULL_MONTH_DAY=$((31+28))					;;
+		3)	FULL_MONTH_DAY=$((31+29+31))				;;
+		4)	FULL_MONTH_DAY=$((31+28+31+30))				;;
+		5)	FULL_MONTH_DAY=$((31+28+31+30+31))				;;
+		6)	FULL_MONTH_DAY=$((31+28+31+30+31+30))			;;
+		7)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31))			;;
+		8)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31))		;;
+		9)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31+30))		;;
+		10)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31+30+31))	;;
+		11)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31+30+31+30))	;;
+	esac
+else	
+	case $FULL_MONTH in
+		1)	FULL_MONTH_DAY=31						;;
+		2)	FULL_MONTH_DAY=$((31+28))					;;
+		3)	FULL_MONTH_DAY=$((31+28+31))				;;
+		4)	FULL_MONTH_DAY=$((31+28+31+30))				;;
+		5)	FULL_MONTH_DAY=$((31+28+31+30+31))				;;
+		6)	FULL_MONTH_DAY=$((31+28+31+30+31+30))			;;
+		7)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31))			;;
+		8)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31))		;;
+		9)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31+30))		;;
+		10)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31+30+31))	;;
+		11)	FULL_MONTH_DAY=$((31+28+31+30+31+30+31+31+30+31+30))	;;
+	esac
+fi
+
+echo $FULL_MONTH_DAY
+
+SECONDES_SUMMATION=$(($FULL_YEAR_DAY*86400+$FULL_MONTH_DAY*86400+$FULL_DAY*86400+$TIME_HOUR*3600+$TIME_MINUTE*60+$TIME_SECONDES))
+echo $SECONDES_SUMMATION
+
