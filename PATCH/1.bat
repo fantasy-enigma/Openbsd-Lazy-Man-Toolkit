@@ -1,1 +1,38 @@
+#! /bin/sh
 
+rm -f PATCH.BAT PATCH.ERR PATCH.LOG PATCH_FILE_LIST.TXT BUILD.BAT BUILD.ERR BUILD.LOG
+ls *.patch.sig >> ./PATCH_FILE_LIST.TXT
+vi ./PATCH_FILE_LIST.TXT
+LIST_LINE_MAX=`sed -n $= ./PATCH_FILE_LIST.TXT`
+LIST_LINE_COUNTER=1
+while [ $LIST_LINE_COUNTER -le $LIST_LINE_MAX ]
+do
+	PATCH_FILE_NAME="`sed -n ${LIST_LINE_COUNTER}p ./PATCH_FILE_LIST.TXT`"
+	echo "$PATCH_FILE_NAME\n"
+	if [ "$PATCH_FILE_NAME" -a -f "$PATCH_FILE_NAME" ]
+	then
+			PATCH_LINE_MAX=`sed -n $= $PATCH_FILE_NAME`
+			PATCH_LINE_COUNTER=1
+			while [ $PATCH_LINE_COUNTER -le $PATCH_LINE_MAX ]
+			do
+				PATCH_LINE="`sed -n ${PATCH_LINE_COUNTER}p $PATCH_FILE_NAME`"
+				if [ "`echo $PATCH_LINE | grep -E '^ *signify *-Vep *'`" ]
+				then
+					echo $PATCH_LINE >> ./PATCH.BAT
+					while [ "`echo $PATCH_LINE | grep -E '\\ *$'`" ]
+					do
+						PATCH_LINE_COUNTER=$(($PATCH_LINE_COUNTER+1))
+						PATCH_LINE="`sed -n ${PATCH_LINE_COUNTER}p $PATCH_FILE_NAME`"
+						echo $PATCH_LINE >> ./PATCH.BAT
+					done
+
+				fi
+
+			PATCH_LINE_COUNTER=$(($PATCH_LINE_COUNTER+1))
+			done
+	fi
+
+LIST_LINE_COUNTER=$(($LIST_LINE_COUNTER+1))
+done
+
+sh ./PATCH.BAT 1>>./PATCH.LOG 2>>./PATCH.ERR
