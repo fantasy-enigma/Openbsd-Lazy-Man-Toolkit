@@ -3,23 +3,23 @@
 MY_PATH="`echo $0 | sed s/'\/[^\/]*$'//g`"
 
 # USB devices
-${MY_PATH}/kernel_slimming.bat 234 361
+${MY_PATH}/kernel_slimming.bat 230 357
 mv -v GENERIC_MY_KERNEL GENERIC
 
 # Networking devices
-${MY_PATH}/kernel_slimming.bat 498 563
+${MY_PATH}/kernel_slimming.bat 494 558
 mv -v GENERIC_MY_KERNEL GENERIC
 
 # Wireless network cards
-${MY_PATH}/kernel_slimming.bat 565 596
+${MY_PATH}/kernel_slimming.bat 560 590
 mv -v GENERIC_MY_KERNEL GENERIC
 
 # mii & MIDI & Audio
-${MY_PATH}/kernel_slimming.bat 598 681
+${MY_PATH}/kernel_slimming.bat 592 673
 mv -v GENERIC_MY_KERNEL GENERIC
 
 # FM-Radio support
-${MY_PATH}/kernel_slimming.bat 683 688
+${MY_PATH}/kernel_slimming.bat 677 678
 mv -v GENERIC_MY_KERNEL GENERIC
 
 # Devices at pci
