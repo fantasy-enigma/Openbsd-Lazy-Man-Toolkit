@@ -1,0 +1,10 @@
+apple
+dosen
+caven
+amule
+amuled
+mldonkey
+mldonkey_gui
+chrome
+firefox
+dooble

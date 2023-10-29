@@ -1,0 +1,4 @@
+_sndio_cookies
+_Xserver_cookies
+_netbrowser
+_p2p_share
