@@ -1,0 +1,13 @@
+/usr/src/bin/
+/usr/src/etc/
+/usr/src/games/
+/usr/src/gnu/
+/usr/src/include/
+/usr/src/lib/
+/usr/src/libexec/
+/usr/src/sbin/
+/usr/src/share/
+/usr/src/sys/
+/usr/src/usr.bin/
+/usr/src/usr.sbin/
+/usr/xenocara/
